@@ -10,3 +10,4 @@ urllib3
 heroku
 heroku3
 apscheduler
+html5
