@@ -14,15 +14,15 @@ soup = BeautifulSoup(response.text, 'lxml')
 
 
 
-진주날짜 = soup1.select("div.hg1 > p")[0].text
-진주계 = soup1.select("span.num2")[0].text
-진주완치 = soup1.select("span.num1")[0].text
-진주입원중 = soup1.select("span.num1")[1].text
-진주사망자 = soup1.select("span.num1")[2].text
-진주검사중 = soup1.select("span.num1.ls3")[0].text
-진주검사결과 = soup1.select("span.num1.ls3")[1].text
-진주자가격리자 = soup1.select("span.num11")[0].text
-진주거리두기단계 = soup1.select("div#notice1 > ul > li")[0].text
+날짜 = soup.select("div.hg1 > p")[0].text
+계 = soup.select("span.num2")[0].text
+완치 = soup.select("span.num1")[0].text
+입원중 = soup.select("span.num1")[1].text
+사망자 = soup.select("span.num1")[2].text
+검사중 = soup.select("span.num1.ls3")[0].text
+검사결과 = soup.select("span.num1.ls3")[1].text
+자가격리자 = soup.select("span.num11")[0].text
+거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
 
 
 l = []
