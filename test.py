@@ -17,6 +17,18 @@ soup = BeautifulSoup(response.text, 'lxml')
 사망자 = soup.select("div.situation1_1 p")[3].text.replace('\n', '')
 계 = soup.select("div.situation1_1 p")[4].text.replace('\n', '')
 
+
+진주날짜 = soup.select("div.hg1 > p")[0].text
+진즈계 = soup.select("span.num2")[0].text
+진주완치 = soup.select("span.num1")[0].text
+진주입원중 = soup.select("span.num1")[1].text
+진주사망자 = soup.select("span.num1")[2].text
+진주검사중 = soup.select("span.num1.ls3")[0].text
+진주검사결과 = soup.select("span.num1.ls3")[1].text
+진주자가격리자 = soup.select("span.num11")[0].text
+진주거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
+
+
 l = []
 ##파일을 쓴다
 import csv
