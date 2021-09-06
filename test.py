@@ -17,22 +17,7 @@ soup = BeautifulSoup(response.text, 'lxml')
 사망자 = soup.select("div.situation1_1 p")[3].text.replace('\n', '')
 계 = soup.select("div.situation1_1 p")[4].text.replace('\n', '')
 
-for i in twoStep:
-    날짜.append(i.select('td[align="center"] > span')[0].text)
-    종가.append(int(i.select('td.num > span')[0].text.replace(',', '')))
-    전일비.append(int(i.select('td.num > span.tah.p11')[1].text.strip().replace(',', '')))
-    거래량.append(int(i.select('td.num > span')[5].text.replace(',', '')))
 
-l = []
-
-for i in range(len(날짜)):
-    l.append({
-        '날짜':날짜[i],
-        '종가':종가[i],
-        '전일비':전일비[i],
-        '거래량':거래량[i],
-
-    })
     
 ##파일을 쓴다
 import csv
