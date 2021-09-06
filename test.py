@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 response = requests.get("http://xn--19-q81ii1knc140d892b.kr/main/main.do")
 
 soup = BeautifulSoup(response.text, 'lxml')
-response1 = requests1.get("https://www.jinju.go.kr/05190/05641.web")
+response1 = requests.get("https://www.jinju.go.kr/05190/05641.web")
 soup1 = BeautifulSoup(response1.text, 'lxml')
 
 
