@@ -49,11 +49,11 @@ with open('data.js', "r", encoding="UTF-8-sig") as f:
         line = f.readline()
 #파일에 변수명을 추가하여 다시 쓴다.
 final_data = f"var data = {data};"
-final_data = f"var 현재시간 = '{시가총액}';\n\
-final_data = f"var 입원중 = '{시가총액}';\n\
-final_data = f"var 완치 = '{시가총액}';\n\
-final_data = f"var 사망자 = '{시가총액}';\n\
-final_data = f"var 계 = '{시가총액}';\n\
+final_data = f"var 현재시간 = '{현재시간}';\n\
+final_data = f"var 입원중 = '{입원중}';\n\
+final_data = f"var 완치 = '{완치}';\n\
+final_data = f"var 사망자 = '{사망자}';\n\
+final_data = f"var 계 = '{계}';\n\
 " + final_data
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data) 
