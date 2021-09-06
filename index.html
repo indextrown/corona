@@ -62,7 +62,15 @@
                     <div class="card-body text-dark">
                       <h5 class="card-title">확진자Chart</h5>
                       <p class="card-text">
-                        
+                          <p id="날짜"></p>
+			  <p id="계"></p>
+			  <p id="완치"></p>
+			  <p id="입원중"></p>
+			  <p id="사망자"></p>
+			  <p id="검사중"></p>
+			  <p id="검사결과"></p>
+			  <p id="자가격리자"></p>
+			  <p id="거리두기단계"></p>	    
                       </p>
                     </div>
                 </div>
@@ -118,6 +126,16 @@
     document.getElementById('완치').innerHTML = '완치 : ' + 완치
     document.getElementById('사망자').innerHTML = '사망자 : ' + 사망자
     document.getElementById('계').innerHTML = '계 : ' + 계
+    document.getElementById('날짜').innerHTML = '날짜 : ' + 날짜
+    document.getElementById('계').innerHTML = '계 : ' + 계
+    document.getElementById('완치').innerHTML = '완치 : ' + 완치
+    document.getElementById('입원중').innerHTML = '입원중 : ' + 입원중
+    document.getElementById('사망자').innerHTML = '사망자 : ' + 사망자	  
+    document.getElementById('검사중').innerHTML = '검사중 : ' + 검사중
+    document.getElementById('검사결과').innerHTML = '검사결과 : ' + 검사결과
+    document.getElementById('자가격리자').innerHTML = '자가격리자 : ' + 자가격리자
+    document.getElementById('거리두기단계').innerHTML = '거리두기단계 : ' + 거리두기단계
+		     
 		     	
 
     let tableBodyData = [];
