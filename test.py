@@ -42,14 +42,14 @@ with open('data.js', "r", encoding="UTF-8-sig") as f:
 #파일에 변수명을 추가하여 다시 쓴다.
 final_data = f"var data = {data};"
 final_data = f"var 날짜 = '{날짜}';\n\
-var 계 = '{진주계}';\n\
-var 완치 = '{진주완치}';\n\
-var 입원중 = '{진주입원중}';\n\
-var 사망자 = '{진주사망자}';\n\
-var 검사중 = '{진주검사중}';\n\
-var 검사결과 = '{진주검사결과}';\n\
-var 자가격리자 = '{진주자가격리자}';\n\
-var 거리두기단계 = '{진주거리두기단계}';\n\
+var 계 = '{계}';\n\
+var 완치 = '{완치}';\n\
+var 입원중 = '{입원중}';\n\
+var 사망자 = '{사망자}';\n\
+var 검사중 = '{검사중}';\n\
+var 검사결과 = '{검사결과}';\n\
+var 자가격리자 = '{자가격리자}';\n\
+var 거리두기단계 = '{거리두기단계}';\n\
 " + final_data
 with open('data.js', "w", encoding="UTF-8-sig") as f_write:
     f_write.write(final_data) 
