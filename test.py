@@ -18,7 +18,7 @@ soup = BeautifulSoup(response.text, 'lxml')
 계 = soup.select("div.situation1_1 p")[4].text.replace('\n', '')
 
 
-    
+l = []
 ##파일을 쓴다
 import csv
 import json
