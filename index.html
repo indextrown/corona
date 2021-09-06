@@ -94,7 +94,12 @@
     </div>
 <script src="data.js"></script>
 <script>
-    document.getElementById('시가총액').innerHTML = '시가총액 : ' + 시가총액 +'억원'
+    document.getElementById('현재시간').innerHTML = '현재시간 : ' + 현재시간
+    document.getElementById('입원중').innerHTML = '입원중 : ' + 입원중
+    document.getElementById('완치').innerHTML = '완치 : ' + 완치
+    document.getElementById('사망자').innerHTML = '사망자 : ' + 사망자
+    document.getElementById('계').innerHTML = '계 : ' + 계
+		     	
 
     let tableBodyData = [];
     for (let variable of data) {
@@ -109,13 +114,7 @@
     }
     document.querySelector('.table > tbody').innerHTML = tableBodyData.join('');
 </script>
-                     <script>
-    document.getElementById('현재시간').innerHTML = '현재시간 : ' + 현재시간
-    document.getElementById('입원중').innerHTML = '입원중 : ' + 입원중
-    document.getElementById('완치').innerHTML = '완치 : ' + 완치
-    document.getElementById('사망자').innerHTML = '사망자 : ' + 사망자
-    document.getElementById('계').innerHTML = '계 : ' + 계
-
+<script>
 
     let tableBodyData = [];
     for (let variable of data) {
