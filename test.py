@@ -41,7 +41,7 @@ with open('data.js', "r", encoding="UTF-8-sig") as f:
         line = f.readline()
 #파일에 변수명을 추가하여 다시 쓴다.
 final_data = f"var data = {data};"
-final_data = f"var 진주날짜 = '{진주날짜}';\n\
+final_data = f"var 날짜 = '{날짜}';\n\
 var 계 = '{진주계}';\n\
 var 완치 = '{진주완치}';\n\
 var 입원중 = '{진주입원중}';\n\
