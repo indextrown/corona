@@ -8,7 +8,8 @@ from bs4 import BeautifulSoup
 response = requests.get("http://xn--19-q81ii1knc140d892b.kr/main/main.do")
 
 soup = BeautifulSoup(response.text, 'lxml')
-
+response1 = requests1.get("https://www.jinju.go.kr/05190/05641.web")
+soup1 = BeautifulSoup(response1.text, 'lxml')
 
 
 현재시간 = soup.select("div.top_area > p.exp")[0].text.replace('\t', '').replace('\r', '').replace('\n', '')
@@ -18,15 +19,15 @@ soup = BeautifulSoup(response.text, 'lxml')
 계 = soup.select("div.situation1_1 p")[4].text.replace('\n', '')
 
 
-진주날짜 = soup.select("div.hg1 > p")[0].text
-진주계 = soup.select("span.num2")[0].text
-진주완치 = soup.select("span.num1")[0].text
-진주입원중 = soup.select("span.num1")[1].text
-진주사망자 = soup.select("span.num1")[2].text
-진주검사중 = soup.select("span.num1.ls3")[0].text
-진주검사결과 = soup.select("span.num1.ls3")[1].text
-진주자가격리자 = soup.select("span.num11")[0].text
-진주거리두기단계 = soup.select("div#notice1 > ul > li")[0].text
+진주날짜 = soup1.select("div.hg1 > p")[0].text
+진주계 = soup1.select("span.num2")[0].text
+진주완치 = soup1.select("span.num1")[0].text
+진주입원중 = soup1.select("span.num1")[1].text
+진주사망자 = soup1.select("span.num1")[2].text
+진주검사중 = soup1.select("span.num1.ls3")[0].text
+진주검사결과 = soup1.select("span.num1.ls3")[1].text
+진주자가격리자 = soup1.select("span.num11")[0].text
+진주거리두기단계 = soup1.select("div#notice1 > ul > li")[0].text
 
 
 l = []
